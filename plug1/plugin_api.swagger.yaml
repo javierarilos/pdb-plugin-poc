@@ -1,0 +1,40 @@
+swagger: '2.0'
+info:
+  title: PLUGIN 1 API
+  version: "0.0.1"
+basePath: '/v1/plug1'
+consumes:
+  - application/json
+produces:
+  - application/json
+
+######### PATHS: ENDPOINTS DEFINITION
+paths:
+  /hi:
+    get:
+      operationId: plug1.app.say_hi
+      summary: Says hi
+      parameters:
+        - $ref: '#/parameters/Authorization'
+        - name: name
+          in: query
+          type: string
+      responses:
+        200:
+          description: Successful response.
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+                description: Greeting message
+
+
+######### PARAMETERS DEFINITION
+parameters:
+  Authorization:
+    name: Authorization
+    description: Token for authenticating the request. Currently, a dummy implementation. Expected to contain the user_id
+    in: header
+    required: true
+    type: string
