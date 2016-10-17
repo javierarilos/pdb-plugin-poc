@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import connexion
-from plug1.pdb_api_spec_factory import get_api_spec_fpath
+from plugin_poc.pdb_api_spec_factory import get_api_spec_fpath
 
 
 def say_hi(name):

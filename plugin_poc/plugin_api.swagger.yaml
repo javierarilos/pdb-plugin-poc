@@ -2,7 +2,7 @@ swagger: '2.0'
 info:
   title: PLUGIN 1 API
   version: "0.0.1"
-basePath: '/v1/plug1'
+basePath: '/v1/plugin_poc'
 consumes:
   - application/json
 produces:
@@ -12,7 +12,7 @@ produces:
 paths:
   /hi:
     get:
-      operationId: plug1.app.say_hi
+      operationId: plugin_poc.app.say_hi
       summary: Says hi
       parameters:
         - $ref: '#/parameters/Authorization'

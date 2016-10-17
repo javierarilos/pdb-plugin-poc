@@ -7,5 +7,5 @@ setup(name='pdb_plugin_1_poc',
       version='0.0.1',
       description='A connexion plugin to be run inside PDB server',
       author='PDB team',
-      packages=['plug1'],
+      packages=['plugin_poc'],
       )
